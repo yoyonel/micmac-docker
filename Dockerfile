@@ -12,5 +12,13 @@ ADD update_micmac.sh /update_micmac.sh
 RUN chmod +x /setup.sh
 RUN chmod +x /update_micmac.sh
 RUN /setup.sh
+
+ENV PATH="/micmac/bin:${PATH}"
+
 #Mount /home (persistent data)
 VOLUME /home
+WORKDIR /home
+
+# http://www.torkwrench.com/2011/12/16/d-bus-library-appears-to-be-incorrectly-set-up-failed-to-read-machine-uuid-failed-to-open-varlibdbusmachine-id/
+RUN apt-get update && apt-get install -y dbus
+RUN dbus-uuidgen > /var/lib/dbus/machine-id

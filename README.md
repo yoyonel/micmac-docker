@@ -50,3 +50,18 @@ Just remove it with docker :
 
 Feel free to fork. Have fun !
 
+
+# Docker hub
+
+https://hub.docker.com/r/yoyonel/micmac/
+
+```bash
+yoyonel/micmac        latest              d15b79c33e37        2 hours ago         3.8GB
+```
+
+# Links
+
+- http://geomatips.blogspot.com/2016/06/installation-de-micmac-avec-support.html
+- https://github.com/giscan/micmac-docker/issues/1
+- https://micmac.ensg.eu/index.php/Fontaine_tutorial
+- https://micmac.ensg.eu/index.php/TiPunch => Il faut les normales (vertex) dans le ply input
